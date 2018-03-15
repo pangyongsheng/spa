@@ -1,0 +1,17 @@
+﻿<div id="list" v-cloak>
+    	<!-- 导航 -->
+		<yd-navbar title="新闻列表" bgcolor="#21ACFF" color="#fff">
+	        <yd-navbar-back-icon slot="left" color="#fff" @click.native="back"></yd-navbar-back-icon>
+	        <yd-navbar-next-icon slot="right" color="#fff"></yd-navbar-next-icon>
+	    </yd-navbar>
+	    <!-- 列表 -->
+        <yd-scrollnav>
+            <yd-scrollnav-panel :label="item.label" v-for="item, key in list" :key="key">
+                <p class="demo-scrollnav-title">{{item.label}}</p>
+
+            </yd-scrollnav-panel>
+        </yd-scrollnav>
+   
+
+	
+</div>

@@ -1,0 +1,9 @@
+.ui-header .ui-right{
+	position: absolute;
+	right: 0;
+	top:0;
+}
+.home .warp{
+	margin-top: 45px;
+	position: relative;
+}
