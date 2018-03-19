@@ -1,8 +1,8 @@
 (function(){
     function Vipspa(){
-        
+
     }
-    Vipspa.prototype.start = function(config){  
+    Vipspa.prototype.start = function(config){
         var self = this;
         self.routerMap = config.router;     //路由配置
         self.mainView = config.view;        //目标div
@@ -58,7 +58,7 @@
         var index = 0;
         messageStack = [];
     };
-    
+
     Vipspa.prototype.stringify = function(routerUrl,paramObj){
         var paramStr='' ,hash;
         for(var i in  paramObj){
@@ -89,7 +89,7 @@
             url = hash.substring(1,pIndex);
             var paramStr = hash.substring(pIndex+1);
             var paramArr = paramStr.split('&');
-            
+
             $.each(paramArr,function(i,e){
                 var item = e.split('='),
                     key,
@@ -99,7 +99,7 @@
                 if(key!==''){
                     param[key] = decodeURIComponent(val);
                 }
-                
+
 
             });
         }
@@ -114,14 +114,14 @@
     };
     function routerAction (routeObj){
         var routerItem = vipspa.routerMap[routeObj.url];
-        
+
         if(typeof routerItem==='undefined'){
             var defaultsRoute = vipspa.routerMap.defaults;
             routerItem = vipspa.routerMap[defaultsRoute];
             location.hash = defaultsRoute;
             return false;
         }
-        
+
         $.ajax({
             type: 'GET',
             url: routerItem.templateUrl,
@@ -129,15 +129,16 @@
             success: function(data, status, xhr){
                 //加载页面，动画分享
                 if(routerItem.animate=='right'){
-                    $(vipspa.mainView).html(data).children().addClass('page-from-right-to-center'); 
-                    $(vipspa.mainView).children().animationEnd(function(){
-                        console.info('x');
-                    });  
+                    $(vipspa.mainView).html(data).children().addClass('page-from-right-to-center');
+
                 }else if(routerItem.animate=='left'){
                     $(vipspa.mainView).html(data).children().addClass('page-from-left-to-center');
                 }else{
                     $(vipspa.mainView).html(data)
                 }
+                $(document).on('webkitAnimationEnd',vipspa.mainView+'>div',function(){
+                    $(this).removeClass('page-from-right-to-center');
+                });
                 //console.log($(vipspa.mainView)
                 loadScript(routerItem.controller);
                 loadCss(routerItem.styles);
@@ -153,19 +154,19 @@
             }
         });
     }
-   
+
     function startRouter  () {
         var hash = location.hash;
         var routeObj = vipspa.parse(hash);
         console.log(routeObj);
         routerAction(routeObj);
     }
-    
+
     function loadScript(src, callback) {
-        
+
         var script = document.createElement('script'),
             loaded;
-            
+
         script.setAttribute('src', src);
         script.onreadystatechange = script.onload = function() {
             script.onreadystatechange = null;
@@ -177,7 +178,7 @@
             }
             loaded = true;
         };
-        
+
         document.documentElement.appendChild(script);
     }
 
