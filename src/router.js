@@ -1,5 +1,5 @@
 $(function(){
-	vipspa.start({
+	router.start({
         view: '#ui-view',
         errorTemplateId: '#error', // 可选
         router: {
@@ -9,30 +9,24 @@ $(function(){
                 styles:'./pages/home/home.css',
                 animate:''
             },
-            'register': {
-                templateUrl: './pages/register/register.html',
-                controller: './pages/register/register.js',
-                styles:'./pages/register/register.css',
-                animate:'right'
-            },
-            'transfer': {
-                templateUrl: './pages/transfer/transfer.html',
-                controller: './pages/transfer/transfer.js',
-                styles:'./pages/transfer/transfer.css',
-                animate:''
-            },
-            'metal': {
-                templateUrl: './pages/metal/metal.html',
-                controller: './pages/metal/metal.js',
-                styles:'./pages/metal/metal.css',
-                animate:''
-            },
-            'list': {
+			'list': {
                 templateUrl: './pages/list/list.html',
                 controller: './pages/list/list.js',
                 styles:'./pages/list/list.css',
                 animate:''
             },
+			'personal': {
+                templateUrl: './pages/personal/personal.html',
+                controller: './pages/personal/personal.js',
+                styles:'./pages/personal/personal.css',
+                animate:''
+            },
+			'detail':{
+				templateUrl: './pages/detail/detail.html',
+                controller: './pages/detail/detail.js',
+                styles:'./pages/detail/detail.css',
+                animate:'right'
+			},
             'defaults': 'home' //默认路由
         }
     });

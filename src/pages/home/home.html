@@ -1,16 +1,149 @@
-﻿<div class="home" id="home">
-    <header class="ui-header ui-header-positive ui-border-b">
-        <!-- <i class="ui-icon-return" onclick="history.back()"></i> -->
-        <h1>主页</h1>
-        <!-- <i class="ui-icon-next ui-right"></i> -->
+<div class="home g-flexview" id="home">
+    <!-- 头 -->
+    <header class="m-navbar">
+        <a class="navbar-item nav-qs">
+            <i class="icon-qrscan iconc"></i>
+        </a>
+        <div class="navbar-center">
+            <span class="navbar-title">SPA</span>
+        </div>
+        <a class="navbar-item nav-me">
+            <i class="icon-type iconc"></i>
+        </a>
     </header>
-    <div class="warp">
-        <button class="ui-btn ui-btn-primary">
-        </button>
-        <a href="#register">bestsrcoll</a>
-        <li class="ui-border-t">
-        <p><span>1.faycheng </span><span class="date"> 2月12日</span></p>
-        <h4>这本书太赞了，每次看都有不一样的体会和感悟，超级喜欢！期待大结局。</h4>
+    <!-- 内容 -->
+    <div class="warp g-scrollview">
+        <!-- 轮播 -->
+        <div class="m-slider" id="J_Slider">
+            <div class="slider-wrapper">
+                <div class="slider-item">
+                    <a>
+                        <img src="http://static.ydcss.com/uploads/ydui/1.jpg">
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a>
+                        <img src="http://static.ydcss.com/uploads/ydui/2.jpg">
+                    </a>
+                </div>
+                <div class="slider-item">
+                    <a>
+                        <img src="http://static.ydcss.com/uploads/ydui/3.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="slider-pagination"></div>
+        </div>
+        <!-- 列表1 -->
+        <div class="m-celltitle">导航栏一</div>
+        <div class="m-grids-3">
+            <a href="#" class="grids-item">
+                <div class="grids-icon"><i class="icon-qq icons"></i></div>
+                <div class="grids-txt"><span>QQ</span></div>
+            </a>
+            <a href="#" class="grids-item">
+                <div class="grids-icon"><i class="icon-weibo icons"></i></div>
+                <div class="grids-txt"><span>微博</span></div>
+            </a>
+            <a href="#" class="grids-item">
+                <div class="grids-icon"><i class="icon-weixin icons"></i></div>
+                <div class="grids-txt"><span>微信</span></div>
+            </a>
+            <a href="#" class="grids-item">
+                <div class="grids-icon"><i class="icon-search icons"></i></div>
+                <div class="grids-txt"><span>查看项目</span></div>
+            </a>
+            <a href="#" class="grids-item">
+                <div class="grids-icon"><i class="icon-footmark icons"></i></div>
+                <div class="grids-txt"><span>足记</span></div>
+            </a>
+            <a href="#" class="grids-item">
+                <div class="grids-icon"><i class="icon-good icons"></i></div>
+                <div class="grids-txt"><span>我去点赞</span></div>
+            </a>
+        </div>
+        <!-- 列表2 -->
+        <div class="m-celltitle">导航栏二</div>
+        <article class="m-list list-theme1">
+            <a class="list-item">
+                <div class="list-img">
+                    <img src="http://img1.shikee.com/try/2016/06/19/09430120929215230041.jpg_220x220.jpg">
+                </div>
+                <div class="list-mes">
+                    <h3 class="list-title">标题标题标题标题标题</h3>
+                    <div class="list-mes-item">
+                        <div>
+                            <span class="list-price"><em>¥</em>34.7</span>
+                            <span class="list-del-price">¥45.65</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="list-item">
+                <div class="list-img">
+                    <img src="http://img1.shikee.com/try/2016/06/21/10172020923917672923.jpg_220x220.jpg">
+                </div>
+                <div class="list-mes">
+                    <h3 class="list-title">骆驼男装2016夏装男士短袖T恤 圆领衣服 印花男装体恤 半袖打底衫</h3>
+                    <div class="list-mes-item">
+                        <div>
+                            <span class="list-price"><em>¥</em>34.7</span>
+                            <span class="list-del-price">¥45.65</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="list-item">
+                <div class="list-img">
+                    <img src="http://img1.shikee.com/try/2016/06/23/15395220917905380014.jpg_220x220.jpg">
+                </div>
+                <div class="list-mes">
+                    <h3 class="list-title">条纹短袖T恤男士韩版衣服大码潮流男装夏季圆领体恤2016新款半袖</h3>
+                    <div class="list-mes-item">
+                        <div>
+                            <span class="list-price"><em>¥</em>34.7</span>
+                            <span class="list-del-price">¥45.65</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="list-item">
+                <div class="list-img">
+                    <img src="http://img1.shikee.com/try/2016/06/25/14244120933639105658.jpg_220x220.jpg">
+                </div>
+                <div class="list-mes">
+                    <h3 class="list-title">夏季青少年衣服男生潮牌t恤 男士 夏秋学生 日系棉短袖半袖男小衫</h3>
+                    <div class="list-mes-item">
+                        <div>
+                            <span class="list-price"><em>¥</em>34.7</span>
+                            <span class="list-del-price">¥45.65</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </article>
 
     </div>
+    <!-- 尾 -->
+    <footer class="m-tabbar">
+        <a href="#" class="tabbar-item  tabbar-active">
+            <span class="tabbar-icon">
+                <i class="icon-home"></i>
+            </span>
+            <span class="tabbar-txt">首页</span>
+        </a>
+        <a href="#list" class="tabbar-item">
+            <span class="tabbar-icon">
+                <i class="icon-shopcart-outline"></i>
+            </span>
+            <span class="tabbar-txt">购物</span>
+        </a>
+        <a href="#personal" class="tabbar-item">
+            <span class="tabbar-icon">
+               <i class="icon-ucenter-outline"></i>
+               <span class="badge badge-danger">2</span>
+            </span>
+            <span class="tabbar-txt">个人中心</span>
+        </a>
+    </footer>
 </div>

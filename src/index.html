@@ -1,32 +1,37 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title>main</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <link rel="stylesheet" href="css/libs/basic.css">
-    <link rel="stylesheet" href="css/libs/frozen.css">
+    <!-- <link rel="stylesheet" href="css/libs/basic.css">
+    <link rel="stylesheet" href="css/libs/frozen.css"> -->
+    <link rel="stylesheet" href="css/libs/ydui.css">
+    <link rel="stylesheet" href="css/libs/route.css">
     <link rel="stylesheet" href="css/public/common.css">
-    <link rel="stylesheet" href="css/public/public.css">
+    <script src="js/libs/ydui.flexible.js"></script>
 </head>
+
 <body>
-<div id="ui-view">
-    
-</div>
-<!--错误信息-->
-<script type="text/html" id="error">
-    <div>
-        {{errStatus}}
+    <div id="ui-view">
+
     </div>
-    <div>
-        {{errContent}}
-    </div>
-</script>
-<script src="js/libs/vue.js"></script>
-<script src="js/libs/zepto.js"></script>
-<script src="js/libs/frozen.js"></script>
-<script src="js/libs/route.js"></script>
-<script src="js/public/common.js"></script>
-<script src="router.js"></script>
+    <!--错误信息-->
+    <script type="text/html" id="error">
+        <div>
+            {{errStatus}}
+        </div>
+        <div>
+            {{errContent}}
+        </div>
+    </script>
+    <script src="js/libs/zepto.js"></script>
+    <script src="js/libs/ydui.js"></script>
+    <script src="js/libs/route.js"></script>
+    <script src="js/public/common.js"></script>
+    <script src="router.js"></script>
 </body>
+
 </html>

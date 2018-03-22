@@ -1,28 +1,30 @@
-#list .m-navbar{
+#detail .m-navbar{
 	background: linear-gradient(-45deg, #2ed1d1, #23c8c8);
 	background: -webkit-linear-gradient(-45deg, #2ed1d1, #23c8c8);
     background: -o-linear-gradient(-45deg, #2ed1d1, #23c8c8);
     background: -moz-linear-gradient(-45deg, #2ed1d1, #23c8c8);
 }
-#list .m-navbar .iconc{
+#detail .m-navbar .iconc{
 	font-size: .4rem;
 	color: #fff;
 	font-weight: lighter;
 }
-#list .m-navbar .navbar-title{
+#detail .m-navbar .navbar-title{
 	color: #fff;
 	font-weight: bolder;
 }
-
-#list .tabbar-active{
+#detail .iconc{
+	color: #fff;
+}
+#detail .tabbar-active{
 	color: #23c8c8;
 }
-#list .m-celltitle{
+#detail .m-celltitle{
 	margin-top: .1rem;
 }
-#list .list-price{
-	color:#23c8c8;
+#detail .tab-nav-item.tab-active{
+	color:#2ed1d1;
 }
-#list .badge-danger{
-	background-color: rgb(231, 57, 129);
+#detail .slider-pagination-item-active{
+	background-color:#2ed1d1;
 }

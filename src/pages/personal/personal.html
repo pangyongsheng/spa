@@ -1,0 +1,125 @@
+<div id="personal"  class="personal g-flexview" >
+	<!-- 头 -->
+    <header class="m-navbar">
+        <a href="#" class="navbar-item">
+            <i class="icon-qrscan iconc"></i>
+        </a>
+        <div class="navbar-center">
+            <span class="navbar-title">SPA</span>
+        </div>
+        <a href="#" class="navbar-item">
+            <i class="icon-type iconc"></i>
+        </a>
+    </header>
+	<!-- 内容 -->
+    <div class="warp g-scrollview">
+		<div class="m-celltitle">个人信息</div>
+		<div class="m-cell">
+		    <a class="cell-item" href="javascript:;">
+		        <div class="cell-left"><i class="cell-icon icon-feedback"></i>昵称</div>
+		        <div class="cell-right cell-arrow" contenteditable="true">生生</div>
+		    </a>
+		    <a class="cell-item" href="javascript:;">
+		        <div class="cell-left"><i class="cell-icon icon-feedback"></i>手机</div>
+		        <div class="cell-right cell-arrow" contenteditable="true">182 8820 1862</div>
+		    </a>
+			<a class="cell-item" href="javascript:;">
+		        <div class="cell-left"><i class="cell-icon icon-feedback"></i>邮箱</div>
+		        <div class="cell-right cell-arrow" contenteditable="true">pang_yongsheng@outlook.com</div>
+		    </a>
+			<div class="cell-item">
+		        <div class="cell-left"><i class="cell-icon icon-feedback"></i>性别：</div>
+		        <label class="cell-right cell-arrow">
+		            <select class="cell-select">
+		                <option value="">请选择性别</option>
+		                <option value="1">男</option>
+		                <option value="2">女</option>
+		                <option value="3">未知</option>
+		            </select>
+		        </label>
+		    </div>
+		</div>
+
+		<div class="m-celltitle">购物信息</div>
+		<div class="m-cell">
+		    <a class="cell-item" href="javascript:;">
+		        <div class="cell-left"><i class="cell-icon icon-discount"></i>我的订单</div>
+		        <div class="cell-right cell-arrow">查看全部订单</div>
+		    </a>
+		    <a class="cell-item" href="javascript:;">
+		        <div class="cell-left"><i class="cell-icon icon-star-outline"></i>我的收藏</div>
+		        <div class="cell-right cell-arrow"></div>
+		    </a>
+			<a class="cell-item" href="javascript:;">
+		        <div class="cell-left"><i class="cell-icon icon-like-outline"></i>我的关注</div>
+		        <div class="cell-right cell-arrow"></div>
+		    </a>
+		</div>
+		<div class="m-celltitle">收货地址</div>
+        <div class="m-cell">
+            <div class="cell-item">
+                <div class="cell-left">所在地区：</div>
+                <div class="cell-right cell-arrow">
+                    <input type="text" class="cell-input" readonly id="J_Address" value="" placeholder="请选择收货地址">
+                </div>
+            </div>
+        </div>
+		<div class="m-celltitle">接受推送信息</div>
+		<div class="m-cell">
+		    <label class="cell-item">
+		        <span class="cell-left">订单信息</span>
+		        <label class="cell-right">
+		            <input type="checkbox" name="checkbox" checked="checked"/>
+		            <i class="cell-checkbox-icon"></i>
+		        </label>
+		    </label>
+		    <label class="cell-item">
+		        <span class="cell-left">物流信息</span>
+		        <label class="cell-right">
+		            <input type="checkbox" name="checkbox" checked="checked"/>
+		            <i class="cell-checkbox-icon"></i>
+		        </label>
+		    </label>
+		    <label class="cell-item">
+		        <span class="cell-left">支付信息</span>
+		        <label class="cell-right">
+		            <input type="checkbox" name="checkbox"/>
+		            <i class="cell-checkbox-icon"></i>
+		        </label>
+		    </label>
+		</div>
+
+		<div class="m-celltitle">意见反馈</div>
+        <div class="m-cell">
+            <div class="cell-item">
+                <div class="cell-right">
+                    <textarea class="cell-textarea" placeholder="请输入您的建议与反馈"></textarea>
+                </div>
+            </div>
+        </div>
+		<button type="button" class="btn-block btn-primary" id="sub">提交</button>
+
+	</div>
+
+	<!--尾  -->
+	<footer class="m-tabbar">
+		<a href="#home" class="tabbar-item">
+			<span class="tabbar-icon">
+				<i class="icon-home-outline"></i>
+			</span>
+			<span class="tabbar-txt">首页</span>
+		</a>
+		<a href="#list" class="tabbar-item">
+			<span class="tabbar-icon">
+				<i class="icon-shopcart-outline"></i>
+			</span>
+			<span class="tabbar-txt">购物</span>
+		</a>
+		<a href="#personal" class="tabbar-item tabbar-active">
+			<span class="tabbar-icon">
+			   <i class="icon-ucenter"></i>
+			</span>
+			<span class="tabbar-txt">个人中心</span>
+		</a>
+	</footer>
+</div>
