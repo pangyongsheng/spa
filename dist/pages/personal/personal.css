@@ -1,0 +1,34 @@
+#personal .m-navbar{
+	background: linear-gradient(-45deg, #2ed1d1, #23c8c8);
+    background: -moz-linear-gradient(-45deg, #2ed1d1, #23c8c8);
+}
+#personal .m-navbar .iconc{
+	font-size: .4rem;
+	color: #fff;
+	font-weight: lighter;
+}
+#personal .m-navbar .navbar-title{
+	color: #fff;
+	font-weight: bolder;
+}
+
+#personal .tabbar-active{
+	color: #23c8c8;
+}
+#personal .m-celltitle{
+	/* margin-top: .1rem; */
+}
+#personal .cell-select{
+	direction: rtl;
+}
+#personal .cell-icon:before, .cell-icon:after{
+	color: #23c8c8;
+}
+#personal #sub{
+	background-color: #23c8c8;
+}
+#personal .cell-right input[type="radio"]:checked + .cell-checkbox-icon:after, .cell-right input[type="checkbox"]:not(.m-switch):checked + .cell-checkbox-icon:after{
+	color: #23c8c8;
+}
+
+/*# sourceMappingURL=personal.css.map*/

@@ -1,0 +1,28 @@
+#list .m-navbar{
+	background: linear-gradient(-45deg, #2ed1d1, #23c8c8);
+    background: -moz-linear-gradient(-45deg, #2ed1d1, #23c8c8);
+}
+#list .m-navbar .iconc{
+	font-size: .4rem;
+	color: #fff;
+	font-weight: lighter;
+}
+#list .m-navbar .navbar-title{
+	color: #fff;
+	font-weight: bolder;
+}
+
+#list .tabbar-active{
+	color: #23c8c8;
+}
+#list .m-celltitle{
+	margin-top: .1rem;
+}
+#list .list-price{
+	color:#23c8c8;
+}
+#list .badge-danger{
+	background-color: rgb(231, 57, 129);
+}
+
+/*# sourceMappingURL=list.css.map*/

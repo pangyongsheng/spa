@@ -1,4 +1,5 @@
 $(function(){
+	
 	router.start({
         view: '#ui-view',
         errorTemplateId: '#error', // 可选

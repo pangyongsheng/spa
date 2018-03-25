@@ -6,13 +6,13 @@ var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 //配置文件
 var config = {
     entry: {
-     
+
     },
     output: {
-      
+
     },
     module: {
-       
+
     },
     devServer: {
         contentBase: './src/',
@@ -32,7 +32,3 @@ var config = {
 
 
 module.exports = config;
-
-
-
-

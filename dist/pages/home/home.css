@@ -1,0 +1,37 @@
+#home .m-navbar{
+	background: linear-gradient(-45deg, #2ed1d1, #23c8c8);
+    background: -moz-linear-gradient(-45deg, #2ed1d1, #23c8c8);
+}
+#home .m-navbar .iconc{
+	font-size: .4rem;
+	color: #fff;
+	font-weight: lighter;
+}
+#home .m-navbar .navbar-title{
+	color: #fff;
+	font-weight: bolder;
+}
+
+#home .tabbar-active{
+	color: #23c8c8;
+}
+#home .m-celltitle{
+	margin-top: .1rem;
+	color:rgb(172, 184, 180);
+
+}
+#home .icons{
+	color: #23c8c8;
+	font-size: .6rem;
+}
+#home .slider-pagination-item-active{
+	background-color: #23c8c8;
+}
+#home .list-price{
+	color: #23c8c8;
+}
+#home .badge-danger{
+	background-color: rgb(231, 57, 129);
+}
+
+/*# sourceMappingURL=home.css.map*/

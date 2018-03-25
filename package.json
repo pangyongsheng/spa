@@ -4,14 +4,25 @@
   "description": "app",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --colors --progress --inline --hot"
+    "dev": "webpack-dev-server --colors --progress --inline --hot",
+    "build": "webpack --config  webpack.build.config.js -d"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "open-browser-webpack-plugin": "0.0.3",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "glob": "^7.0.0",
+    "autoprefixer-loader": "^3.2.0",
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.9.0",
+    "url-loader": "^0.5.7",
+    "webpack-md5-hash": "0.0.5"
   },
   "dependencies": {}
 }

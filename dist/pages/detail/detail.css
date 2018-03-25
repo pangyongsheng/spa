@@ -1,0 +1,30 @@
+#detail .m-navbar{
+	background: linear-gradient(-45deg, #2ed1d1, #23c8c8);
+    background: -moz-linear-gradient(-45deg, #2ed1d1, #23c8c8);
+}
+#detail .m-navbar .iconc{
+	font-size: .4rem;
+	color: #fff;
+	font-weight: lighter;
+}
+#detail .m-navbar .navbar-title{
+	color: #fff;
+	font-weight: bolder;
+}
+#detail .iconc{
+	color: #fff;
+}
+#detail .tabbar-active{
+	color: #23c8c8;
+}
+#detail .m-celltitle{
+	margin-top: .1rem;
+}
+#detail .tab-nav-item.tab-active{
+	color:#2ed1d1;
+}
+#detail .slider-pagination-item-active{
+	background-color:#2ed1d1;
+}
+
+/*# sourceMappingURL=detail.css.map*/
