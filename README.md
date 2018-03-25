@@ -12,26 +12,26 @@
 
 ## 目录结构
 * |-- src
-* |     |--index.html             首页（空页面，通过路由加载其他页面）
-* |     |--router.js              路由
-* |     |--css                    公共css文件
-* |     |   |--libs                   第三方ui库
-* |     |   |--public                 公共样式
-* |     |--js                     公共js文件
-* |     |   |--libs                   第三方js库、插件
-* |     |   |--public                 公共方法
-* |     |--pages                  页面
-* |          |--home              home页文件
-* |          |   |--home.html         html
-* |          |   |--home.js           js
-* |          |   |--home.css          css
+* |    |--index.html             首页（空页面，通过路由加载其他页面）
+* |    |--router.js              路由
+* |    |--css                    公共css文件
+* |    |   |--libs               第三方ui库
+* |    |   |--public             公共样式
+* |    |--js                     公共js文件
+* |    |   |--libs               第三方js库、插件
+* |    |   |--public             公共方法
+* |    |--pages                  页面
+* |          |--home             home页文件
+* |          |   |--home.html    html
+* |          |   |--home.js      js
+* |          |   |--home.css     css
 * |          |
-* |          |--list              list页文件
-* |               |--
-* |               |--
-* |               |--
-* |          |...                 其他页面
+* |          |--list             list页文件
+* |          |   |--
+* |          |   |--
+* |          |   |--
+* |          |...                其他页面
 * |
 * |--packjson                     
-* |--webpack.config.js            开发模式配置文件：仅使用webpack-server启服务，不打包    
-* |--webpack.bulid.config.js      bulid配置文件，执行 npm run bulid 打包（不推荐使用）
+* |--webpack.config.js           开发模式配置文件：仅使用webpack-server启服务，不打包    
+* |--webpack.bulid.config.js     bulid配置文件，执行 npm run bulid 打包（不推荐使用）
