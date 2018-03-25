@@ -11,6 +11,9 @@
     $ npm run dev
 
 ## 目录结构
+
+```shell
+
 * |-- src
 * |    |--index.html             首页（空页面，通过路由加载其他页面）
 * |    |--router.js              路由
@@ -35,3 +38,5 @@
 * |--packjson                     
 * |--webpack.config.js           开发模式配置文件：仅使用webpack-server启服务，不打包    
 * |--webpack.bulid.config.js     bulid配置文件，执行 npm run bulid 打包（不推荐使用）
+
+```
