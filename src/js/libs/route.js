@@ -194,30 +194,6 @@
 
          head.appendChild(linkTag);
     }
-    //css事件处理
-    function __dealCssEvent(eventNameArr, callback) {
-        console.info(eventNameArr);
-        var events = eventNameArr,
-            i, dom = this;
-
-        function fireCallBack(e) {
-            if (e.target !== this) return;
-            callback.call(this, e);
-            for (i = 0; i < events.length; i++) {
-                dom.off(events[i], fireCallBack);
-            }
-        }
-
-        if (callback) {
-            console.info('1');
-            for (i = 0; i < events.length; i++) {
-                dom.on(events[i], fireCallBack);
-                console.log(dom);
-            }
-        }
-    }
-
-
 
     window.router = new R();
 })();
